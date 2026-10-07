@@ -39,5 +39,9 @@ _Objetivo: Implementar la captura de estado del sistema y la heurística de dife
 
 - [x] Implementar `NtfsManager` (Abstracción API nativa).
 - [x] Implementar `TransactionalRelocationEngine` (Copias de seguridad transaccionales).
-- **Fase 6**: Integración y desarrollo de `Reflect.UI` (WPF).
+## Fase 6: Integración y Reflect.UI (Completado)
+*Objetivo: Interfaz visual y orquestación de todos los motores.*
+
+- [x] Crear la ventana principal de WPF (XAML).
+- [x] Orquestar de forma asíncrona (CodeBehind).
 - **Fase 7**: Testing general, QA y despliegue inicial.

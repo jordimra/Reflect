@@ -1,12 +1,51 @@
-﻿<Window x:Class="Reflect.UI.MainWindow"
+<Window x:Class="Reflect.UI.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:Reflect.UI"
-        mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
+        Title="Reflect" Height="450" Width="600">
+    <Grid Margin="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
 
+        <TextBlock Text="Reflect - Reubicación Transparente" FontSize="18" FontWeight="Bold" Margin="0,0,0,10"/>
+
+        <StackPanel Grid.Row="1" Orientation="Horizontal" Margin="0,0,0,10">
+            <TextBlock Text="Instalador (.exe / .msi):" Width="130" VerticalAlignment="Center"/>
+            <TextBox x:Name="TxtInstallerPath" Width="350" Margin="0,0,10,0"/>
+            <Button x:Name="BtnSelectInstaller" Content="Examinar..." Width="80" Click="BtnSelectInstaller_Click"/>
+        </StackPanel>
+
+        <StackPanel Grid.Row="2" Orientation="Horizontal" Margin="0,0,0,10">
+            <TextBlock Text="Destino físico:" Width="130" VerticalAlignment="Center"/>
+            <TextBox x:Name="TxtTargetDir" Width="350" Margin="0,0,10,0" ToolTip="Ej: D:\Applications"/>
+            <Button x:Name="BtnSelectTarget" Content="Examinar..." Width="80" Click="BtnSelectTarget_Click"/>
+        </StackPanel>
+
+        <GroupBox Grid.Row="3" Header="Propuesta (Carpetas detectadas)" Margin="0,0,0,10">
+            <ListView x:Name="ListProposals">
+                <ListView.View>
+                    <GridView>
+                        <GridViewColumn Header="Directorio Principal" Width="400" DisplayMemberBinding="{Binding Path}"/>
+                        <GridViewColumn Header="Estado" Width="100" DisplayMemberBinding="{Binding Status}"/>
+                    </GridView>
+                </ListView.View>
+            </ListView>
+        </GroupBox>
+
+        <StackPanel Grid.Row="4" Orientation="Horizontal" Margin="0,0,0,10">
+            <Button x:Name="BtnRunInstaller" Content="1. Ejecutar Instalador" Width="140" Margin="0,0,10,0" Click="BtnRunInstaller_Click"/>
+            <Button x:Name="BtnRelocate" Content="2. Mover y Crear Junctions" Width="160" IsEnabled="False" Click="BtnRelocate_Click"/>
+        </StackPanel>
+
+        <StatusBar Grid.Row="5">
+            <StatusBarItem>
+                <TextBlock x:Name="TxtStatus" Text="Listo."/>
+            </StatusBarItem>
+        </StatusBar>
     </Grid>
 </Window>
