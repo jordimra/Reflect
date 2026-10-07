@@ -1,11 +1,49 @@
 {
   "version": 4,
   "targets": {
-    "net10.0": {}
+    "net10.0": {
+      "Reflect.Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "compile": {
+          "bin/placeholder/Reflect.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Reflect.Core.dll": {}
+        }
+      },
+      "Reflect.Snapshots/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "dependencies": {
+          "Reflect.Core": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Reflect.Snapshots.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Reflect.Snapshots.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "Reflect.Core/1.0.0": {
+      "type": "project",
+      "path": "../Reflect.Core/Reflect.Core.csproj",
+      "msbuildProject": "../Reflect.Core/Reflect.Core.csproj"
+    },
+    "Reflect.Snapshots/1.0.0": {
+      "type": "project",
+      "path": "../Reflect.Snapshots/Reflect.Snapshots.csproj",
+      "msbuildProject": "../Reflect.Snapshots/Reflect.Snapshots.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net10.0": []
+    "net10.0": [
+      "Reflect.Core >= 1.0.0",
+      "Reflect.Snapshots >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\jordimra\\.nuget\\packages\\": {}
@@ -34,7 +72,14 @@
         "net10.0": {
           "framework": "net10.0",
           "targetAlias": "net10.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "D:\\Personal\\proyectos\\programar\\API\\Reflect\\src\\Reflect.Core\\Reflect.Core.csproj": {
+              "projectPath": "D:\\Personal\\proyectos\\programar\\API\\Reflect\\src\\Reflect.Core\\Reflect.Core.csproj"
+            },
+            "D:\\Personal\\proyectos\\programar\\API\\Reflect\\src\\Reflect.Snapshots\\Reflect.Snapshots.csproj": {
+              "projectPath": "D:\\Personal\\proyectos\\programar\\API\\Reflect\\src\\Reflect.Snapshots\\Reflect.Snapshots.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

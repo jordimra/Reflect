@@ -34,3 +34,9 @@ Puedes construir la solución abriendo `Reflect.slnx` con Visual Studio 2022 o u
 ```bash
 dotnet build
 ```
+
+Para generar un ejecutable final, autónomo e independiente (*Standalone*), optimizado para Windows:
+```bash
+dotnet publish src/Reflect.UI/Reflect.UI.csproj -c Release -r win-x64 --self-contained true -p:PublishSingleFile=true
+```
+Esto creará un único archivo `Reflect.UI.exe` listo para distribuir.

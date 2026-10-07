@@ -1,0 +1,15 @@
+D:\Personal\proyectos\programar\API\Reflect\src\Reflect.Snapshots\bin\Debug\net10.0\Reflect.Snapshots.deps.json
+D:\Personal\proyectos\programar\API\Reflect\src\Reflect.Snapshots\bin\Debug\net10.0\Reflect.Snapshots.dll
+D:\Personal\proyectos\programar\API\Reflect\src\Reflect.Snapshots\bin\Debug\net10.0\Reflect.Snapshots.pdb
+D:\Personal\proyectos\programar\API\Reflect\src\Reflect.Snapshots\bin\Debug\net10.0\Reflect.Core.dll
+D:\Personal\proyectos\programar\API\Reflect\src\Reflect.Snapshots\bin\Debug\net10.0\Reflect.Core.pdb
+D:\Personal\proyectos\programar\API\Reflect\src\Reflect.Snapshots\obj\Debug\net10.0\Reflect.Snapshots.csproj.AssemblyReference.cache
+D:\Personal\proyectos\programar\API\Reflect\src\Reflect.Snapshots\obj\Debug\net10.0\Reflect.Snapshots.GeneratedMSBuildEditorConfig.editorconfig
+D:\Personal\proyectos\programar\API\Reflect\src\Reflect.Snapshots\obj\Debug\net10.0\Reflect.Snapshots.AssemblyInfoInputs.cache
+D:\Personal\proyectos\programar\API\Reflect\src\Reflect.Snapshots\obj\Debug\net10.0\Reflect.Snapshots.AssemblyInfo.cs
+D:\Personal\proyectos\programar\API\Reflect\src\Reflect.Snapshots\obj\Debug\net10.0\Reflect.Snapshots.csproj.CoreCompileInputs.cache
+D:\Personal\proyectos\programar\API\Reflect\src\Reflect.Snapshots\obj\Debug\net10.0\Reflect..E9764D6A.Up2Date
+D:\Personal\proyectos\programar\API\Reflect\src\Reflect.Snapshots\obj\Debug\net10.0\Reflect.Snapshots.dll
+D:\Personal\proyectos\programar\API\Reflect\src\Reflect.Snapshots\obj\Debug\net10.0\refint\Reflect.Snapshots.dll
+D:\Personal\proyectos\programar\API\Reflect\src\Reflect.Snapshots\obj\Debug\net10.0\Reflect.Snapshots.pdb
+D:\Personal\proyectos\programar\API\Reflect\src\Reflect.Snapshots\obj\Debug\net10.0\ref\Reflect.Snapshots.dll

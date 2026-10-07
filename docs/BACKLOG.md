@@ -44,4 +44,8 @@ _Objetivo: Implementar la captura de estado del sistema y la heurística de dife
 
 - [x] Crear la ventana principal de WPF (XAML).
 - [x] Orquestar de forma asíncrona (CodeBehind).
-- **Fase 7**: Testing general, QA y despliegue inicial.
+## Fase 7: Testing general, QA y despliegue inicial (Completado)
+*Objetivo: Pruebas automatizadas de la lógica en memoria y documentación de empaquetado final.*
+
+- [x] Crear proyecto `Reflect.Tests` con casos unitarios.
+- [x] Documentar despliegue (Standalone) en el README.

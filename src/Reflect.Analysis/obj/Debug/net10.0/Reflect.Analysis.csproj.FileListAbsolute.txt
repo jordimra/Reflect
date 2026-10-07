@@ -1,0 +1,17 @@
+D:\Personal\proyectos\programar\API\Reflect\src\Reflect.Analysis\bin\Debug\net10.0\Reflect.Analysis.deps.json
+D:\Personal\proyectos\programar\API\Reflect\src\Reflect.Analysis\bin\Debug\net10.0\Reflect.Analysis.dll
+D:\Personal\proyectos\programar\API\Reflect\src\Reflect.Analysis\bin\Debug\net10.0\Reflect.Analysis.pdb
+D:\Personal\proyectos\programar\API\Reflect\src\Reflect.Analysis\bin\Debug\net10.0\Reflect.Core.dll
+D:\Personal\proyectos\programar\API\Reflect\src\Reflect.Analysis\bin\Debug\net10.0\Reflect.Snapshots.dll
+D:\Personal\proyectos\programar\API\Reflect\src\Reflect.Analysis\bin\Debug\net10.0\Reflect.Core.pdb
+D:\Personal\proyectos\programar\API\Reflect\src\Reflect.Analysis\bin\Debug\net10.0\Reflect.Snapshots.pdb
+D:\Personal\proyectos\programar\API\Reflect\src\Reflect.Analysis\obj\Debug\net10.0\Reflect.Analysis.csproj.AssemblyReference.cache
+D:\Personal\proyectos\programar\API\Reflect\src\Reflect.Analysis\obj\Debug\net10.0\Reflect.Analysis.GeneratedMSBuildEditorConfig.editorconfig
+D:\Personal\proyectos\programar\API\Reflect\src\Reflect.Analysis\obj\Debug\net10.0\Reflect.Analysis.AssemblyInfoInputs.cache
+D:\Personal\proyectos\programar\API\Reflect\src\Reflect.Analysis\obj\Debug\net10.0\Reflect.Analysis.AssemblyInfo.cs
+D:\Personal\proyectos\programar\API\Reflect\src\Reflect.Analysis\obj\Debug\net10.0\Reflect.Analysis.csproj.CoreCompileInputs.cache
+D:\Personal\proyectos\programar\API\Reflect\src\Reflect.Analysis\obj\Debug\net10.0\Reflect..4481A785.Up2Date
+D:\Personal\proyectos\programar\API\Reflect\src\Reflect.Analysis\obj\Debug\net10.0\Reflect.Analysis.dll
+D:\Personal\proyectos\programar\API\Reflect\src\Reflect.Analysis\obj\Debug\net10.0\refint\Reflect.Analysis.dll
+D:\Personal\proyectos\programar\API\Reflect\src\Reflect.Analysis\obj\Debug\net10.0\Reflect.Analysis.pdb
+D:\Personal\proyectos\programar\API\Reflect\src\Reflect.Analysis\obj\Debug\net10.0\ref\Reflect.Analysis.dll
