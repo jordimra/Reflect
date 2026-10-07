@@ -1,0 +1,39 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v10.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v10.0": {
+      "Reflect.Ntfs/1.0.0": {
+        "dependencies": {
+          "Reflect.Core": "1.0.0"
+        },
+        "runtime": {
+          "Reflect.Ntfs.dll": {}
+        }
+      },
+      "Reflect.Core/1.0.0": {
+        "runtime": {
+          "Reflect.Core.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Reflect.Ntfs/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Reflect.Core/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

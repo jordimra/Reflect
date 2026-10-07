@@ -1,0 +1,15 @@
+D:\Personal\proyectos\programar\API\Reflect\src\Reflect.Ntfs\obj\Debug\net10.0\Reflect.Ntfs.csproj.AssemblyReference.cache
+D:\Personal\proyectos\programar\API\Reflect\src\Reflect.Ntfs\obj\Debug\net10.0\Reflect.Ntfs.GeneratedMSBuildEditorConfig.editorconfig
+D:\Personal\proyectos\programar\API\Reflect\src\Reflect.Ntfs\obj\Debug\net10.0\Reflect.Ntfs.AssemblyInfoInputs.cache
+D:\Personal\proyectos\programar\API\Reflect\src\Reflect.Ntfs\obj\Debug\net10.0\Reflect.Ntfs.AssemblyInfo.cs
+D:\Personal\proyectos\programar\API\Reflect\src\Reflect.Ntfs\obj\Debug\net10.0\Reflect.Ntfs.csproj.CoreCompileInputs.cache
+D:\Personal\proyectos\programar\API\Reflect\src\Reflect.Ntfs\bin\Debug\net10.0\Reflect.Ntfs.deps.json
+D:\Personal\proyectos\programar\API\Reflect\src\Reflect.Ntfs\bin\Debug\net10.0\Reflect.Ntfs.dll
+D:\Personal\proyectos\programar\API\Reflect\src\Reflect.Ntfs\bin\Debug\net10.0\Reflect.Ntfs.pdb
+D:\Personal\proyectos\programar\API\Reflect\src\Reflect.Ntfs\bin\Debug\net10.0\Reflect.Core.dll
+D:\Personal\proyectos\programar\API\Reflect\src\Reflect.Ntfs\bin\Debug\net10.0\Reflect.Core.pdb
+D:\Personal\proyectos\programar\API\Reflect\src\Reflect.Ntfs\obj\Debug\net10.0\Reflect..066FF37B.Up2Date
+D:\Personal\proyectos\programar\API\Reflect\src\Reflect.Ntfs\obj\Debug\net10.0\Reflect.Ntfs.dll
+D:\Personal\proyectos\programar\API\Reflect\src\Reflect.Ntfs\obj\Debug\net10.0\refint\Reflect.Ntfs.dll
+D:\Personal\proyectos\programar\API\Reflect\src\Reflect.Ntfs\obj\Debug\net10.0\Reflect.Ntfs.pdb
+D:\Personal\proyectos\programar\API\Reflect\src\Reflect.Ntfs\obj\Debug\net10.0\ref\Reflect.Ntfs.dll

@@ -102,3 +102,7 @@ D:\Personal\proyectos\programar\API\Reflect\tests\Reflect.Tests\obj\Debug\net10.
 D:\Personal\proyectos\programar\API\Reflect\tests\Reflect.Tests\obj\Debug\net10.0\Reflect.Tests.pdb
 D:\Personal\proyectos\programar\API\Reflect\tests\Reflect.Tests\obj\Debug\net10.0\Reflect.Tests.genruntimeconfig.cache
 D:\Personal\proyectos\programar\API\Reflect\tests\Reflect.Tests\obj\Debug\net10.0\ref\Reflect.Tests.dll
+D:\Personal\proyectos\programar\API\Reflect\tests\Reflect.Tests\bin\Debug\net10.0\Reflect.Filesystem.dll
+D:\Personal\proyectos\programar\API\Reflect\tests\Reflect.Tests\bin\Debug\net10.0\Reflect.Ntfs.dll
+D:\Personal\proyectos\programar\API\Reflect\tests\Reflect.Tests\bin\Debug\net10.0\Reflect.Ntfs.pdb
+D:\Personal\proyectos\programar\API\Reflect\tests\Reflect.Tests\bin\Debug\net10.0\Reflect.Filesystem.pdb

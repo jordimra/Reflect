@@ -1,0 +1,15 @@
+D:\Personal\proyectos\programar\API\Reflect\src\Reflect.Filesystem\bin\Debug\net10.0\Reflect.Filesystem.deps.json
+D:\Personal\proyectos\programar\API\Reflect\src\Reflect.Filesystem\bin\Debug\net10.0\Reflect.Filesystem.dll
+D:\Personal\proyectos\programar\API\Reflect\src\Reflect.Filesystem\bin\Debug\net10.0\Reflect.Filesystem.pdb
+D:\Personal\proyectos\programar\API\Reflect\src\Reflect.Filesystem\bin\Debug\net10.0\Reflect.Core.dll
+D:\Personal\proyectos\programar\API\Reflect\src\Reflect.Filesystem\bin\Debug\net10.0\Reflect.Core.pdb
+D:\Personal\proyectos\programar\API\Reflect\src\Reflect.Filesystem\obj\Debug\net10.0\Reflect.Filesystem.csproj.AssemblyReference.cache
+D:\Personal\proyectos\programar\API\Reflect\src\Reflect.Filesystem\obj\Debug\net10.0\Reflect.Filesystem.GeneratedMSBuildEditorConfig.editorconfig
+D:\Personal\proyectos\programar\API\Reflect\src\Reflect.Filesystem\obj\Debug\net10.0\Reflect.Filesystem.AssemblyInfoInputs.cache
+D:\Personal\proyectos\programar\API\Reflect\src\Reflect.Filesystem\obj\Debug\net10.0\Reflect.Filesystem.AssemblyInfo.cs
+D:\Personal\proyectos\programar\API\Reflect\src\Reflect.Filesystem\obj\Debug\net10.0\Reflect.Filesystem.csproj.CoreCompileInputs.cache
+D:\Personal\proyectos\programar\API\Reflect\src\Reflect.Filesystem\obj\Debug\net10.0\Reflect..F500DF95.Up2Date
+D:\Personal\proyectos\programar\API\Reflect\src\Reflect.Filesystem\obj\Debug\net10.0\Reflect.Filesystem.dll
+D:\Personal\proyectos\programar\API\Reflect\src\Reflect.Filesystem\obj\Debug\net10.0\refint\Reflect.Filesystem.dll
+D:\Personal\proyectos\programar\API\Reflect\src\Reflect.Filesystem\obj\Debug\net10.0\Reflect.Filesystem.pdb
+D:\Personal\proyectos\programar\API\Reflect\src\Reflect.Filesystem\obj\Debug\net10.0\ref\Reflect.Filesystem.dll

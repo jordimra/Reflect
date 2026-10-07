@@ -21,6 +21,9 @@
   <ItemGroup>
     <ProjectReference Include="..\..\src\Reflect.Core\Reflect.Core.csproj" />
     <ProjectReference Include="..\..\src\Reflect.Analysis\Reflect.Analysis.csproj" />
+    <ProjectReference Include="..\..\src\Reflect.Snapshots\Reflect.Snapshots.csproj" />
+    <ProjectReference Include="..\..\src\Reflect.Ntfs\Reflect.Ntfs.csproj" />
+    <ProjectReference Include="..\..\src\Reflect.Filesystem\Reflect.Filesystem.csproj" />
   </ItemGroup>
 
 </Project>

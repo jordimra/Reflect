@@ -68,25 +68,28 @@ namespace Reflect.Ntfs
                 byte[] substituteNameBytes = Encoding.Unicode.GetBytes(junctionTargetPath);
                 byte[] printNameBytes = Encoding.Unicode.GetBytes(targetPath);
 
-                int headerSize = 16;
+                int headerSize = 8; // ReparseTag (4) + ReparseDataLength (2) + Reserved (2)
                 int dataSize = 8 + substituteNameBytes.Length + 2 + printNameBytes.Length + 2;
                 int bufferSize = headerSize + dataSize;
                 IntPtr buffer = Marshal.AllocHGlobal(bufferSize);
 
                 try
                 {
-                    Marshal.WriteInt32(buffer, 0, (int)IO_REPARSE_TAG_MOUNT_POINT);
-                    Marshal.WriteInt32(buffer, 4, dataSize);
-                    Marshal.WriteInt16(buffer, 8, 0); // Reservado
-                    Marshal.WriteInt16(buffer, 10, 0); // SubstituteNameOffset
-                    Marshal.WriteInt16(buffer, 12, (short)substituteNameBytes.Length);
-                    Marshal.WriteInt16(buffer, 14, (short)(substituteNameBytes.Length + 2)); // PrintNameOffset
-                    Marshal.WriteInt16(buffer, 16, (short)printNameBytes.Length);
+                    Marshal.WriteInt32(buffer, 0, unchecked((int)IO_REPARSE_TAG_MOUNT_POINT));
+                    Marshal.WriteInt16(buffer, 4, (short)dataSize);
+                    Marshal.WriteInt16(buffer, 6, 0); // Reserved
+                    
+                    Marshal.WriteInt16(buffer, 8, 0); // SubstituteNameOffset
+                    Marshal.WriteInt16(buffer, 10, (short)substituteNameBytes.Length);
+                    Marshal.WriteInt16(buffer, 12, (short)(substituteNameBytes.Length + 2)); // PrintNameOffset
+                    Marshal.WriteInt16(buffer, 14, (short)printNameBytes.Length);
 
-                    Marshal.Copy(substituteNameBytes, 0, new IntPtr(buffer.ToInt64() + 18), substituteNameBytes.Length);
-                    Marshal.WriteInt16(new IntPtr(buffer.ToInt64() + 18 + substituteNameBytes.Length), 0);
-                    Marshal.Copy(printNameBytes, 0, new IntPtr(buffer.ToInt64() + 20 + substituteNameBytes.Length), printNameBytes.Length);
-                    Marshal.WriteInt16(new IntPtr(buffer.ToInt64() + 20 + substituteNameBytes.Length + printNameBytes.Length), 0);
+                    // PathBuffer empieza exactamente en el offset 16
+                    Marshal.Copy(substituteNameBytes, 0, new IntPtr(buffer.ToInt64() + 16), substituteNameBytes.Length);
+                    Marshal.WriteInt16(new IntPtr(buffer.ToInt64() + 16 + substituteNameBytes.Length), 0);
+                    
+                    Marshal.Copy(printNameBytes, 0, new IntPtr(buffer.ToInt64() + 18 + substituteNameBytes.Length), printNameBytes.Length);
+                    Marshal.WriteInt16(new IntPtr(buffer.ToInt64() + 18 + substituteNameBytes.Length + printNameBytes.Length), 0);
 
                     if (!DeviceIoControl(handle, FSCTL_SET_REPARSE_POINT, buffer, bufferSize, IntPtr.Zero, 0, out int bytesReturned, IntPtr.Zero))
                     {

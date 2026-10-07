@@ -418,6 +418,32 @@
           "bin/placeholder/Reflect.Core.dll": {}
         }
       },
+      "Reflect.Filesystem/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "dependencies": {
+          "Reflect.Core": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Reflect.Filesystem.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Reflect.Filesystem.dll": {}
+        }
+      },
+      "Reflect.Ntfs/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "dependencies": {
+          "Reflect.Core": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Reflect.Ntfs.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Reflect.Ntfs.dll": {}
+        }
+      },
       "Reflect.Snapshots/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v10.0",
@@ -951,6 +977,16 @@
       "path": "../../src/Reflect.Core/Reflect.Core.csproj",
       "msbuildProject": "../../src/Reflect.Core/Reflect.Core.csproj"
     },
+    "Reflect.Filesystem/1.0.0": {
+      "type": "project",
+      "path": "../../src/Reflect.Filesystem/Reflect.Filesystem.csproj",
+      "msbuildProject": "../../src/Reflect.Filesystem/Reflect.Filesystem.csproj"
+    },
+    "Reflect.Ntfs/1.0.0": {
+      "type": "project",
+      "path": "../../src/Reflect.Ntfs/Reflect.Ntfs.csproj",
+      "msbuildProject": "../../src/Reflect.Ntfs/Reflect.Ntfs.csproj"
+    },
     "Reflect.Snapshots/1.0.0": {
       "type": "project",
       "path": "../../src/Reflect.Snapshots/Reflect.Snapshots.csproj",
@@ -962,6 +998,9 @@
       "Microsoft.NET.Test.Sdk >= 17.14.1",
       "Reflect.Analysis >= 1.0.0",
       "Reflect.Core >= 1.0.0",
+      "Reflect.Filesystem >= 1.0.0",
+      "Reflect.Ntfs >= 1.0.0",
+      "Reflect.Snapshots >= 1.0.0",
       "coverlet.collector >= 6.0.4",
       "xunit >= 2.9.3",
       "xunit.runner.visualstudio >= 3.1.4"
@@ -1000,6 +1039,15 @@
             },
             "D:\\Personal\\proyectos\\programar\\API\\Reflect\\src\\Reflect.Core\\Reflect.Core.csproj": {
               "projectPath": "D:\\Personal\\proyectos\\programar\\API\\Reflect\\src\\Reflect.Core\\Reflect.Core.csproj"
+            },
+            "D:\\Personal\\proyectos\\programar\\API\\Reflect\\src\\Reflect.Filesystem\\Reflect.Filesystem.csproj": {
+              "projectPath": "D:\\Personal\\proyectos\\programar\\API\\Reflect\\src\\Reflect.Filesystem\\Reflect.Filesystem.csproj"
+            },
+            "D:\\Personal\\proyectos\\programar\\API\\Reflect\\src\\Reflect.Ntfs\\Reflect.Ntfs.csproj": {
+              "projectPath": "D:\\Personal\\proyectos\\programar\\API\\Reflect\\src\\Reflect.Ntfs\\Reflect.Ntfs.csproj"
+            },
+            "D:\\Personal\\proyectos\\programar\\API\\Reflect\\src\\Reflect.Snapshots\\Reflect.Snapshots.csproj": {
+              "projectPath": "D:\\Personal\\proyectos\\programar\\API\\Reflect\\src\\Reflect.Snapshots\\Reflect.Snapshots.csproj"
             }
           }
         }
