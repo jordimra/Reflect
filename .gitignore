@@ -89,3 +89,13 @@ ARM64/
 !_deps/**/*.lib
 !_deps/**/*.dll
 !_deps/**/*.exe
+
+# C# build artifacts
+**/bin/**
+**/obj/**
+*.suo
+*.user
+_ReSharper.*
+packages
+**/Release/
+**/Debug/
