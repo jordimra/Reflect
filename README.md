@@ -40,3 +40,13 @@ Para generar un ejecutable final, autónomo e independiente (*Standalone*), opti
 dotnet publish src/Reflect.UI/Reflect.UI.csproj -c Release -r win-x64 --self-contained true -p:PublishSingleFile=true
 ```
 Esto creará un único archivo `Reflect.UI.exe` listo para distribuir.
+
+## Últimas Mejoras
+
+- **Selección real del destino físico**: Se ha reemplazado el cuadro de diálogo simulado por un `OpenFolderDialog` funcional, permitiendo examinar y elegir visualmente la carpeta de reubicación.
+- **Amplio espectro de Monitorización**: La aplicación ya no se limita a `C:\Program Files`. Ahora captura los cambios en paralelo en `Program Files (x86)`, `ProgramData`, y carpetas de configuración del usuario `AppData` (Roaming, Local, LocalLow) previniendo que se pasen por alto componentes instalados de forma distribuida.
+- **Elevación de privilegios (UAC)**: Reflect ahora solicita automáticamente permisos de Administrador a través del archivo `app.manifest`. Esto asegura el correcto funcionamiento al manipular atributos protegidos o al escribir/enlazar sobre ubicaciones críticas.
+- **Protección de Atributos en Rollback (Bugfix "Access Denied")**: El motor `TransactionalRelocationEngine` ha sido refinado para purgar atributos de "Sólo Lectura" antes de borrar o revertir las copias, evitando cierres o bloqueos catastróficos por permisos nativos.
+- **Detalle de Rutas y Exclusión Manual en UI**: 
+  - La tabla de reubicación de WPF detalla con precisión las rutas "Origen" y "Destino".
+  - Se han implementado casillas (Checkboxes) para la selección granular. De esta forma, si Windows Installer toca directorios colaterales (como `AppData\Local\Microsoft`), el usuario puede desmarcarlos de forma segura antes de realizar los Junctions.
