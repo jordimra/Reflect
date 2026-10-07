@@ -58,9 +58,6 @@ docker/data/
 # AI Rules
 /rules
 
-# Documentation
-/docs
-
 # Target
 /target
 
@@ -68,6 +65,7 @@ docker/data/
 .gemini/
 .agent/
 .antigravity/
+PROJECT.md
 
 # Visual Studio / MSVC / C++ build artifacts
 .vs/

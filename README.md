@@ -34,4 +34,3 @@ Puedes construir la solución abriendo `Reflect.slnx` con Visual Studio 2022 o u
 ```bash
 dotnet build
 ```
-*(Para mayores detalles de arquitectura o reglas internas del proyecto, consulta la documentación privada en `/docs` local si cuentas con el código fuente completo).*
