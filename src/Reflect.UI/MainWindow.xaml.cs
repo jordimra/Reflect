@@ -14,6 +14,16 @@ using Reflect.Snapshots;
 
 namespace Reflect.UI
 {
+    public class ProposalItem
+    {
+        public bool IsSelected { get; set; } = true;
+        public string Path { get; set; }
+        public string Status { get; set; }
+        public string SourceBase { get; set; }
+        public string SourcePath { get; set; }
+        public string TargetPath { get; set; }
+    }
+
     public partial class MainWindow : Window
     {
         private readonly StandardSnapshotEngine _snapshotEngine;
@@ -96,7 +106,7 @@ namespace Reflect.UI
                 }
 
                 TxtStatus.Text = "Analizando cambios (Diff)...";
-                var allProposals = new List<dynamic>();
+                var allProposals = new List<ProposalItem>();
 
                 for (int i = 0; i < _monitoredDirs.Length; i++)
                 {
@@ -107,10 +117,12 @@ namespace Reflect.UI
 
                     foreach (var d in topDirs)
                     {
-                        allProposals.Add(new { 
+                        allProposals.Add(new ProposalItem { 
                             Path = d, 
                             Status = "Nuevo", 
-                            SourceBase = _monitoredDirs[i] 
+                            SourceBase = _monitoredDirs[i],
+                            SourcePath = Path.Combine(_monitoredDirs[i], d),
+                            TargetPath = Path.Combine(TxtTargetDir.Text ?? "", d)
                         });
                     }
                 }
@@ -146,9 +158,11 @@ namespace Reflect.UI
                 return;
             }
 
-            // Usamos un objeto anónimo, por lo que usamos dynamic
-            var items = ListProposals.ItemsSource as IEnumerable<dynamic>;
-            if (items == null || !items.Any()) return;
+            var items = ListProposals.ItemsSource as IEnumerable<ProposalItem>;
+            if (items == null) return;
+
+            var selectedItems = items.Where(i => i.IsSelected).ToList();
+            if (!selectedItems.Any()) return;
 
             BtnRelocate.IsEnabled = false;
 
@@ -156,7 +170,7 @@ namespace Reflect.UI
             {
                 TxtStatus.Text = "Moviendo archivos y creando Junctions... ¡No apague el equipo!";
 
-                foreach (var item in items)
+                foreach (var item in selectedItems)
                 {
                     string topDir = item.Path;
                     string sourceBase = item.SourceBase;

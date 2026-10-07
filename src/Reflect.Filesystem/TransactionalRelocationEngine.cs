@@ -38,7 +38,7 @@ namespace Reflect.Filesystem
                     // Añadir acción de rollback (deshacer renombrado)
                     _rollbackStack.Push(() => 
                     {
-                        if (Directory.Exists(sourceDir)) Directory.Delete(sourceDir, true);
+                        if (Directory.Exists(sourceDir)) ForceDeleteDirectory(sourceDir);
                         Directory.Move(backupDir, sourceDir);
                         return Task.CompletedTask;
                     });
@@ -49,7 +49,7 @@ namespace Reflect.Filesystem
                         Directory.CreateDirectory(targetDir);
                         _rollbackStack.Push(() =>
                         {
-                            Directory.Delete(targetDir, true);
+                            ForceDeleteDirectory(targetDir);
                             return Task.CompletedTask;
                         });
                     }
@@ -61,7 +61,7 @@ namespace Reflect.Filesystem
                     _ntfsManager.CreateJunction(sourceDir, targetDir);
 
                     // Operación exitosa, limpiamos el backup. Si falla, el rollback se encarga.
-                    Directory.Delete(backupDir, true);
+                    ForceDeleteDirectory(backupDir);
                     _rollbackStack.Clear(); // Éxito total
                 }
                 catch (Exception)
@@ -106,6 +106,18 @@ namespace Reflect.Filesystem
                 cancellationToken.ThrowIfCancellationRequested();
                 File.Copy(newPath, newPath.Replace(sourceDir, destDir), true);
             }
+        }
+
+        private void ForceDeleteDirectory(string targetDir)
+        {
+            if (!Directory.Exists(targetDir)) return;
+            
+            // Elimina el atributo de solo lectura para todos los archivos dentro
+            foreach (var file in Directory.GetFiles(targetDir, "*", SearchOption.AllDirectories))
+            {
+                File.SetAttributes(file, FileAttributes.Normal);
+            }
+            Directory.Delete(targetDir, true);
         }
     }
 }

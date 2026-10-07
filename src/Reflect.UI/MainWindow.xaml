@@ -30,8 +30,17 @@
             <ListView x:Name="ListProposals">
                 <ListView.View>
                     <GridView>
-                        <GridViewColumn Header="Directorio Principal" Width="400" DisplayMemberBinding="{Binding Path}"/>
-                        <GridViewColumn Header="Estado" Width="100" DisplayMemberBinding="{Binding Status}"/>
+                        <GridViewColumn Width="40">
+                            <GridViewColumn.CellTemplate>
+                                <DataTemplate>
+                                    <CheckBox IsChecked="{Binding IsSelected}" HorizontalAlignment="Center" />
+                                </DataTemplate>
+                            </GridViewColumn.CellTemplate>
+                        </GridViewColumn>
+                        <GridViewColumn Header="Directorio Principal" Width="150" DisplayMemberBinding="{Binding Path}"/>
+                        <GridViewColumn Header="Estado" Width="80" DisplayMemberBinding="{Binding Status}"/>
+                        <GridViewColumn Header="Ruta Origen" Width="200" DisplayMemberBinding="{Binding SourcePath}"/>
+                        <GridViewColumn Header="Ruta Destino" Width="200" DisplayMemberBinding="{Binding TargetPath}"/>
                     </GridView>
                 </ListView.View>
             </ListView>
