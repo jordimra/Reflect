@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <ItemGroup>
+    <ProjectReference Include="..\Reflect.Core\Reflect.Core.csproj" />
+    <ProjectReference Include="..\Reflect.Installation\Reflect.Installation.csproj" />
+    <ProjectReference Include="..\Reflect.Filesystem\Reflect.Filesystem.csproj" />
+    <ProjectReference Include="..\Reflect.Ntfs\Reflect.Ntfs.csproj" />
+    <ProjectReference Include="..\Reflect.Snapshots\Reflect.Snapshots.csproj" />
+    <ProjectReference Include="..\Reflect.Analysis\Reflect.Analysis.csproj" />
+    <ProjectReference Include="..\Reflect.Reporting\Reflect.Reporting.csproj" />
+  </ItemGroup>
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net10.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+</Project>

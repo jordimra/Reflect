@@ -1,0 +1,12 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/Reflect.Analysis/Reflect.Analysis.csproj" />
+    <Project Path="src/Reflect.Core/Reflect.Core.csproj" />
+    <Project Path="src/Reflect.Filesystem/Reflect.Filesystem.csproj" />
+    <Project Path="src/Reflect.Installation/Reflect.Installation.csproj" />
+    <Project Path="src/Reflect.Ntfs/Reflect.Ntfs.csproj" />
+    <Project Path="src/Reflect.Reporting/Reflect.Reporting.csproj" />
+    <Project Path="src/Reflect.Snapshots/Reflect.Snapshots.csproj" />
+    <Project Path="src/Reflect.UI/Reflect.UI.csproj" />
+  </Folder>
+</Solution>
