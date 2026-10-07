@@ -21,12 +21,10 @@ namespace Reflect.UI
         private readonly ProcessTrackingRunner _runner;
         private readonly TransactionalRelocationEngine _relocator;
 
-        private Snapshot _preSnapshot;
-        private Snapshot _postSnapshot;
-        private ChangeList _changes;
+        private List<Snapshot> _preSnapshots = new List<Snapshot>();
+        private List<Snapshot> _postSnapshots = new List<Snapshot>();
         
-        // Para la prueba principal vigilaremos Archivos de Programa
-        private readonly string _monitoredDir;
+        private readonly string[] _monitoredDirs;
 
         public MainWindow()
         {
@@ -37,7 +35,17 @@ namespace Reflect.UI
             _runner = new ProcessTrackingRunner();
             _relocator = new TransactionalRelocationEngine(new NtfsManager());
 
-            _monitoredDir = Environment.GetFolderPath(Environment.SpecialFolder.ProgramFiles);
+            _monitoredDirs = new[]
+            {
+                Environment.GetFolderPath(Environment.SpecialFolder.ProgramFiles),
+                Environment.GetFolderPath(Environment.SpecialFolder.ProgramFilesX86),
+                Environment.GetFolderPath(Environment.SpecialFolder.CommonApplicationData),
+                Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData),
+                Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData),
+                Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.UserProfile), "AppData", "LocalLow")
+            }.Where(d => !string.IsNullOrWhiteSpace(d) && Directory.Exists(d))
+             .Distinct(StringComparer.OrdinalIgnoreCase)
+             .ToArray();
         }
 
         private void BtnSelectInstaller_Click(object sender, RoutedEventArgs e)
@@ -51,7 +59,11 @@ namespace Reflect.UI
 
         private void BtnSelectTarget_Click(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("Pega o escribe la ruta destino directamente en el recuadro para esta versión inicial.\nEjemplo: D:\\Applications", "Aviso");
+            var dlg = new OpenFolderDialog { Title = "Seleccione la carpeta destino" };
+            if (dlg.ShowDialog() == true)
+            {
+                TxtTargetDir.Text = dlg.FolderName;
+            }
         }
 
         private async void BtnRunInstaller_Click(object sender, RoutedEventArgs e)
@@ -66,28 +78,46 @@ namespace Reflect.UI
             {
                 BtnRunInstaller.IsEnabled = false;
 
-                TxtStatus.Text = $"Tomando snapshot de {_monitoredDir} (puede tardar un momento)...";
-                _preSnapshot = await _snapshotEngine.TakeSnapshotAsync(_monitoredDir);
+                TxtStatus.Text = "Tomando snapshots previos (puede tardar un momento)...";
+                _preSnapshots.Clear();
+                foreach(var dir in _monitoredDirs)
+                {
+                    _preSnapshots.Add(await _snapshotEngine.TakeSnapshotAsync(dir));
+                }
 
                 TxtStatus.Text = "Ejecutando instalador y esperando...";
                 await _runner.RunAndWaitAsync(TxtInstallerPath.Text);
 
-                TxtStatus.Text = $"Tomando snapshot posterior de {_monitoredDir}...";
-                _postSnapshot = await _snapshotEngine.TakeSnapshotAsync(_monitoredDir);
+                TxtStatus.Text = "Tomando snapshots posteriores...";
+                _postSnapshots.Clear();
+                foreach(var dir in _monitoredDirs)
+                {
+                    _postSnapshots.Add(await _snapshotEngine.TakeSnapshotAsync(dir));
+                }
 
                 TxtStatus.Text = "Analizando cambios (Diff)...";
-                // Este paso ocurrirá en el hilo principal pero al ser O(N) será instantáneo
-                _changes = _analyzer.Compare(_preSnapshot, _postSnapshot);
+                var allProposals = new List<dynamic>();
 
-                // Agrupamos simplemente por la carpeta de primer nivel (ej: "Mozilla Firefox")
-                var topLevelDirs = _changes.Added
-                    .Select(n => n.RelativePath.Split(Path.DirectorySeparatorChar).First())
-                    .Distinct()
-                    .ToList();
+                for (int i = 0; i < _monitoredDirs.Length; i++)
+                {
+                    var changes = _analyzer.Compare(_preSnapshots[i], _postSnapshots[i]);
+                    var topDirs = changes.Added
+                        .Select(n => n.RelativePath.Split(Path.DirectorySeparatorChar).First())
+                        .Distinct();
 
-                ListProposals.ItemsSource = topLevelDirs.Select(d => new { Path = d, Status = "Nuevo" });
+                    foreach (var d in topDirs)
+                    {
+                        allProposals.Add(new { 
+                            Path = d, 
+                            Status = "Nuevo", 
+                            SourceBase = _monitoredDirs[i] 
+                        });
+                    }
+                }
 
-                if (topLevelDirs.Any())
+                ListProposals.ItemsSource = allProposals;
+
+                if (allProposals.Any())
                 {
                     BtnRelocate.IsEnabled = true;
                     TxtStatus.Text = "Análisis completado. Por favor, proceda a reubicar.";
@@ -129,10 +159,12 @@ namespace Reflect.UI
                 foreach (var item in items)
                 {
                     string topDir = item.Path;
-                    string sourcePath = Path.Combine(_monitoredDir, topDir);
+                    string sourceBase = item.SourceBase;
+                    string sourcePath = Path.Combine(sourceBase, topDir);
+                    
+                    // Reubica la carpeta recién creada
                     string targetPath = Path.Combine(TxtTargetDir.Text, topDir);
 
-                    // Reubica la carpeta recién creada
                     await _relocator.RelocateAsync(sourcePath, targetPath);
                 }
 
