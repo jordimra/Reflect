@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Personal\\proyectos\\programar\\API\\Reflect\\src\\Reflect.Core\\Reflect.Core.csproj",
+      "projectUniqueName": "B:\\proyectos\\programar\\C#\\Reflect\\src\\Reflect.Core\\Reflect.Core.csproj",
       "projectName": "Reflect.Core",
-      "projectPath": "D:\\Personal\\proyectos\\programar\\API\\Reflect\\src\\Reflect.Core\\Reflect.Core.csproj",
+      "projectPath": "B:\\proyectos\\programar\\C#\\Reflect\\src\\Reflect.Core\\Reflect.Core.csproj",
       "packagesPath": "C:\\Users\\jordimra\\.nuget\\packages\\",
-      "outputPath": "D:\\Personal\\proyectos\\programar\\API\\Reflect\\src\\Reflect.Core\\obj\\",
+      "outputPath": "B:\\proyectos\\programar\\C#\\Reflect\\src\\Reflect.Core\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\jordimra\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Personal\\proyectos\\programar\\API\\Reflect\\src\\Reflect.Ntfs\\Reflect.Ntfs.csproj": {}
+    "B:\\proyectos\\programar\\C#\\Reflect\\src\\Reflect.Ntfs\\Reflect.Ntfs.csproj": {}
   },
   "projects": {
-    "D:\\Personal\\proyectos\\programar\\API\\Reflect\\src\\Reflect.Core\\Reflect.Core.csproj": {
+    "B:\\proyectos\\programar\\C#\\Reflect\\src\\Reflect.Core\\Reflect.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Personal\\proyectos\\programar\\API\\Reflect\\src\\Reflect.Core\\Reflect.Core.csproj",
+        "projectUniqueName": "B:\\proyectos\\programar\\C#\\Reflect\\src\\Reflect.Core\\Reflect.Core.csproj",
         "projectName": "Reflect.Core",
-        "projectPath": "D:\\Personal\\proyectos\\programar\\API\\Reflect\\src\\Reflect.Core\\Reflect.Core.csproj",
+        "projectPath": "B:\\proyectos\\programar\\C#\\Reflect\\src\\Reflect.Core\\Reflect.Core.csproj",
         "packagesPath": "C:\\Users\\jordimra\\.nuget\\packages\\",
-        "outputPath": "D:\\Personal\\proyectos\\programar\\API\\Reflect\\src\\Reflect.Core\\obj\\",
+        "outputPath": "B:\\proyectos\\programar\\C#\\Reflect\\src\\Reflect.Core\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\jordimra\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -341,14 +341,14 @@
         }
       }
     },
-    "D:\\Personal\\proyectos\\programar\\API\\Reflect\\src\\Reflect.Ntfs\\Reflect.Ntfs.csproj": {
+    "B:\\proyectos\\programar\\C#\\Reflect\\src\\Reflect.Ntfs\\Reflect.Ntfs.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Personal\\proyectos\\programar\\API\\Reflect\\src\\Reflect.Ntfs\\Reflect.Ntfs.csproj",
+        "projectUniqueName": "B:\\proyectos\\programar\\C#\\Reflect\\src\\Reflect.Ntfs\\Reflect.Ntfs.csproj",
         "projectName": "Reflect.Ntfs",
-        "projectPath": "D:\\Personal\\proyectos\\programar\\API\\Reflect\\src\\Reflect.Ntfs\\Reflect.Ntfs.csproj",
+        "projectPath": "B:\\proyectos\\programar\\C#\\Reflect\\src\\Reflect.Ntfs\\Reflect.Ntfs.csproj",
         "packagesPath": "C:\\Users\\jordimra\\.nuget\\packages\\",
-        "outputPath": "D:\\Personal\\proyectos\\programar\\API\\Reflect\\src\\Reflect.Ntfs\\obj\\",
+        "outputPath": "B:\\proyectos\\programar\\C#\\Reflect\\src\\Reflect.Ntfs\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\jordimra\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -366,8 +366,8 @@
             "framework": "net10.0",
             "targetAlias": "net10.0",
             "projectReferences": {
-              "D:\\Personal\\proyectos\\programar\\API\\Reflect\\src\\Reflect.Core\\Reflect.Core.csproj": {
-                "projectPath": "D:\\Personal\\proyectos\\programar\\API\\Reflect\\src\\Reflect.Core\\Reflect.Core.csproj"
+              "B:\\proyectos\\programar\\C#\\Reflect\\src\\Reflect.Core\\Reflect.Core.csproj": {
+                "projectPath": "B:\\proyectos\\programar\\C#\\Reflect\\src\\Reflect.Core\\Reflect.Core.csproj"
               }
             }
           }

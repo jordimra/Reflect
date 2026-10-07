@@ -1,0 +1,16 @@
+B:\proyectos\programar\C#\Reflect\src\Reflect.Installation\bin\Debug\net10.0\Reflect.Installation.deps.json
+B:\proyectos\programar\C#\Reflect\src\Reflect.Installation\bin\Debug\net10.0\Reflect.Installation.dll
+B:\proyectos\programar\C#\Reflect\src\Reflect.Installation\bin\Debug\net10.0\Reflect.Installation.pdb
+B:\proyectos\programar\C#\Reflect\src\Reflect.Installation\bin\Debug\net10.0\Reflect.Core.dll
+B:\proyectos\programar\C#\Reflect\src\Reflect.Installation\bin\Debug\net10.0\Reflect.Core.pdb
+B:\proyectos\programar\C#\Reflect\src\Reflect.Installation\obj\Debug\net10.0\Reflect.Installation.csproj.AssemblyReference.cache
+B:\proyectos\programar\C#\Reflect\src\Reflect.Installation\obj\Debug\net10.0\Reflect.Installation.GeneratedMSBuildEditorConfig.editorconfig
+B:\proyectos\programar\C#\Reflect\src\Reflect.Installation\obj\Debug\net10.0\Reflect.Installation.AssemblyInfoInputs.cache
+B:\proyectos\programar\C#\Reflect\src\Reflect.Installation\obj\Debug\net10.0\Reflect.Installation.AssemblyInfo.cs
+B:\proyectos\programar\C#\Reflect\src\Reflect.Installation\obj\Debug\net10.0\Reflect.Installation.csproj.CoreCompileInputs.cache
+B:\proyectos\programar\C#\Reflect\src\Reflect.Installation\obj\Debug\net10.0\Reflect.Installation.sourcelink.json
+B:\proyectos\programar\C#\Reflect\src\Reflect.Installation\obj\Debug\net10.0\Reflect..1382AB80.Up2Date
+B:\proyectos\programar\C#\Reflect\src\Reflect.Installation\obj\Debug\net10.0\Reflect.Installation.dll
+B:\proyectos\programar\C#\Reflect\src\Reflect.Installation\obj\Debug\net10.0\refint\Reflect.Installation.dll
+B:\proyectos\programar\C#\Reflect\src\Reflect.Installation\obj\Debug\net10.0\Reflect.Installation.pdb
+B:\proyectos\programar\C#\Reflect\src\Reflect.Installation\obj\Debug\net10.0\ref\Reflect.Installation.dll

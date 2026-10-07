@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "oC/hQcPUy+o=",
+  "dgSpecHash": "AgDjI9/8R5M=",
   "success": true,
-  "projectFilePath": "D:\\Personal\\proyectos\\programar\\API\\Reflect\\src\\Reflect.Installation\\Reflect.Installation.csproj",
+  "projectFilePath": "B:\\proyectos\\programar\\C#\\Reflect\\src\\Reflect.Installation\\Reflect.Installation.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\jordimra\\.nuget\\packages\\system.codedom\\10.0.9\\system.codedom.10.0.9.nupkg.sha512",
     "C:\\Users\\jordimra\\.nuget\\packages\\system.management\\10.0.9\\system.management.10.0.9.nupkg.sha512"

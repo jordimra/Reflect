@@ -9,3 +9,15 @@ D:\Personal\proyectos\programar\API\Reflect\src\Reflect.Core\obj\Debug\net10.0\R
 D:\Personal\proyectos\programar\API\Reflect\src\Reflect.Core\obj\Debug\net10.0\refint\Reflect.Core.dll
 D:\Personal\proyectos\programar\API\Reflect\src\Reflect.Core\obj\Debug\net10.0\Reflect.Core.pdb
 D:\Personal\proyectos\programar\API\Reflect\src\Reflect.Core\obj\Debug\net10.0\ref\Reflect.Core.dll
+B:\proyectos\programar\C#\Reflect\src\Reflect.Core\bin\Debug\net10.0\Reflect.Core.deps.json
+B:\proyectos\programar\C#\Reflect\src\Reflect.Core\bin\Debug\net10.0\Reflect.Core.dll
+B:\proyectos\programar\C#\Reflect\src\Reflect.Core\bin\Debug\net10.0\Reflect.Core.pdb
+B:\proyectos\programar\C#\Reflect\src\Reflect.Core\obj\Debug\net10.0\Reflect.Core.GeneratedMSBuildEditorConfig.editorconfig
+B:\proyectos\programar\C#\Reflect\src\Reflect.Core\obj\Debug\net10.0\Reflect.Core.AssemblyInfoInputs.cache
+B:\proyectos\programar\C#\Reflect\src\Reflect.Core\obj\Debug\net10.0\Reflect.Core.AssemblyInfo.cs
+B:\proyectos\programar\C#\Reflect\src\Reflect.Core\obj\Debug\net10.0\Reflect.Core.csproj.CoreCompileInputs.cache
+B:\proyectos\programar\C#\Reflect\src\Reflect.Core\obj\Debug\net10.0\Reflect.Core.sourcelink.json
+B:\proyectos\programar\C#\Reflect\src\Reflect.Core\obj\Debug\net10.0\Reflect.Core.dll
+B:\proyectos\programar\C#\Reflect\src\Reflect.Core\obj\Debug\net10.0\refint\Reflect.Core.dll
+B:\proyectos\programar\C#\Reflect\src\Reflect.Core\obj\Debug\net10.0\Reflect.Core.pdb
+B:\proyectos\programar\C#\Reflect\src\Reflect.Core\obj\Debug\net10.0\ref\Reflect.Core.dll

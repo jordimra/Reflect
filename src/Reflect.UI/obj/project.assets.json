@@ -1,11 +1,200 @@
 {
   "version": 4,
   "targets": {
-    "net10.0-windows": {}
+    "net10.0-windows": {
+      "System.Management/10.0.9": {
+        "type": "package",
+        "compile": {
+          "lib/net10.0/System.Management.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net10.0/System.Management.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net8.0/_._": {}
+        },
+        "runtimeTargets": {
+          "runtimes/win/lib/net10.0/System.Management.dll": {
+            "assetType": "runtime",
+            "rid": "win"
+          }
+        }
+      },
+      "Reflect.Analysis/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "dependencies": {
+          "Reflect.Core": "1.0.0",
+          "Reflect.Snapshots": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Reflect.Analysis.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Reflect.Analysis.dll": {}
+        }
+      },
+      "Reflect.Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "compile": {
+          "bin/placeholder/Reflect.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Reflect.Core.dll": {}
+        }
+      },
+      "Reflect.Filesystem/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "dependencies": {
+          "Reflect.Core": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Reflect.Filesystem.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Reflect.Filesystem.dll": {}
+        }
+      },
+      "Reflect.Installation/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "dependencies": {
+          "Reflect.Core": "1.0.0",
+          "System.Management": "10.0.9"
+        },
+        "compile": {
+          "bin/placeholder/Reflect.Installation.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Reflect.Installation.dll": {}
+        }
+      },
+      "Reflect.Ntfs/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "dependencies": {
+          "Reflect.Core": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Reflect.Ntfs.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Reflect.Ntfs.dll": {}
+        }
+      },
+      "Reflect.Reporting/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "dependencies": {
+          "Reflect.Core": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Reflect.Reporting.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Reflect.Reporting.dll": {}
+        }
+      },
+      "Reflect.Snapshots/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "dependencies": {
+          "Reflect.Core": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Reflect.Snapshots.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Reflect.Snapshots.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "System.Management/10.0.9": {
+      "sha512": "8mfTzHLlMHCqFE1+iFGzxRCeCb2gDqvRQtZthuksYB+z546QZaFCiagbJ2KXHe7dy5ZpCUg/usaIqc2DxiemPw==",
+      "type": "package",
+      "path": "system.management/10.0.9",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "PACKAGE.md",
+        "THIRD-PARTY-NOTICES.TXT",
+        "buildTransitive/net8.0/_._",
+        "buildTransitive/netcoreapp2.0/System.Management.targets",
+        "lib/net10.0/System.Management.dll",
+        "lib/net10.0/System.Management.xml",
+        "lib/net462/_._",
+        "lib/net8.0/System.Management.dll",
+        "lib/net8.0/System.Management.xml",
+        "lib/net9.0/System.Management.dll",
+        "lib/net9.0/System.Management.xml",
+        "lib/netstandard2.0/System.Management.dll",
+        "lib/netstandard2.0/System.Management.xml",
+        "runtimes/win/lib/net10.0/System.Management.dll",
+        "runtimes/win/lib/net10.0/System.Management.xml",
+        "runtimes/win/lib/net8.0/System.Management.dll",
+        "runtimes/win/lib/net8.0/System.Management.xml",
+        "runtimes/win/lib/net9.0/System.Management.dll",
+        "runtimes/win/lib/net9.0/System.Management.xml",
+        "system.management.10.0.9.nupkg.sha512",
+        "system.management.nuspec",
+        "useSharedDesignerContext.txt"
+      ]
+    },
+    "Reflect.Analysis/1.0.0": {
+      "type": "project",
+      "path": "../Reflect.Analysis/Reflect.Analysis.csproj",
+      "msbuildProject": "../Reflect.Analysis/Reflect.Analysis.csproj"
+    },
+    "Reflect.Core/1.0.0": {
+      "type": "project",
+      "path": "../Reflect.Core/Reflect.Core.csproj",
+      "msbuildProject": "../Reflect.Core/Reflect.Core.csproj"
+    },
+    "Reflect.Filesystem/1.0.0": {
+      "type": "project",
+      "path": "../Reflect.Filesystem/Reflect.Filesystem.csproj",
+      "msbuildProject": "../Reflect.Filesystem/Reflect.Filesystem.csproj"
+    },
+    "Reflect.Installation/1.0.0": {
+      "type": "project",
+      "path": "../Reflect.Installation/Reflect.Installation.csproj",
+      "msbuildProject": "../Reflect.Installation/Reflect.Installation.csproj"
+    },
+    "Reflect.Ntfs/1.0.0": {
+      "type": "project",
+      "path": "../Reflect.Ntfs/Reflect.Ntfs.csproj",
+      "msbuildProject": "../Reflect.Ntfs/Reflect.Ntfs.csproj"
+    },
+    "Reflect.Reporting/1.0.0": {
+      "type": "project",
+      "path": "../Reflect.Reporting/Reflect.Reporting.csproj",
+      "msbuildProject": "../Reflect.Reporting/Reflect.Reporting.csproj"
+    },
+    "Reflect.Snapshots/1.0.0": {
+      "type": "project",
+      "path": "../Reflect.Snapshots/Reflect.Snapshots.csproj",
+      "msbuildProject": "../Reflect.Snapshots/Reflect.Snapshots.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net10.0-windows": []
+    "net10.0-windows": [
+      "Reflect.Analysis >= 1.0.0",
+      "Reflect.Core >= 1.0.0",
+      "Reflect.Filesystem >= 1.0.0",
+      "Reflect.Installation >= 1.0.0",
+      "Reflect.Ntfs >= 1.0.0",
+      "Reflect.Reporting >= 1.0.0",
+      "Reflect.Snapshots >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\jordimra\\.nuget\\packages\\": {}
@@ -13,11 +202,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Personal\\proyectos\\programar\\API\\Reflect\\src\\Reflect.UI\\Reflect.UI.csproj",
+      "projectUniqueName": "B:\\proyectos\\programar\\C#\\Reflect\\src\\Reflect.UI\\Reflect.UI.csproj",
       "projectName": "Reflect.UI",
-      "projectPath": "D:\\Personal\\proyectos\\programar\\API\\Reflect\\src\\Reflect.UI\\Reflect.UI.csproj",
+      "projectPath": "B:\\proyectos\\programar\\C#\\Reflect\\src\\Reflect.UI\\Reflect.UI.csproj",
       "packagesPath": "C:\\Users\\jordimra\\.nuget\\packages\\",
-      "outputPath": "D:\\Personal\\proyectos\\programar\\API\\Reflect\\src\\Reflect.UI\\obj\\",
+      "outputPath": "B:\\proyectos\\programar\\C#\\Reflect\\src\\Reflect.UI\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\jordimra\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -34,7 +223,29 @@
         "net10.0-windows": {
           "framework": "net10.0-windows7.0",
           "targetAlias": "net10.0-windows",
-          "projectReferences": {}
+          "projectReferences": {
+            "B:\\proyectos\\programar\\C#\\Reflect\\src\\Reflect.Analysis\\Reflect.Analysis.csproj": {
+              "projectPath": "B:\\proyectos\\programar\\C#\\Reflect\\src\\Reflect.Analysis\\Reflect.Analysis.csproj"
+            },
+            "B:\\proyectos\\programar\\C#\\Reflect\\src\\Reflect.Core\\Reflect.Core.csproj": {
+              "projectPath": "B:\\proyectos\\programar\\C#\\Reflect\\src\\Reflect.Core\\Reflect.Core.csproj"
+            },
+            "B:\\proyectos\\programar\\C#\\Reflect\\src\\Reflect.Filesystem\\Reflect.Filesystem.csproj": {
+              "projectPath": "B:\\proyectos\\programar\\C#\\Reflect\\src\\Reflect.Filesystem\\Reflect.Filesystem.csproj"
+            },
+            "B:\\proyectos\\programar\\C#\\Reflect\\src\\Reflect.Installation\\Reflect.Installation.csproj": {
+              "projectPath": "B:\\proyectos\\programar\\C#\\Reflect\\src\\Reflect.Installation\\Reflect.Installation.csproj"
+            },
+            "B:\\proyectos\\programar\\C#\\Reflect\\src\\Reflect.Ntfs\\Reflect.Ntfs.csproj": {
+              "projectPath": "B:\\proyectos\\programar\\C#\\Reflect\\src\\Reflect.Ntfs\\Reflect.Ntfs.csproj"
+            },
+            "B:\\proyectos\\programar\\C#\\Reflect\\src\\Reflect.Reporting\\Reflect.Reporting.csproj": {
+              "projectPath": "B:\\proyectos\\programar\\C#\\Reflect\\src\\Reflect.Reporting\\Reflect.Reporting.csproj"
+            },
+            "B:\\proyectos\\programar\\C#\\Reflect\\src\\Reflect.Snapshots\\Reflect.Snapshots.csproj": {
+              "projectPath": "B:\\proyectos\\programar\\C#\\Reflect\\src\\Reflect.Snapshots\\Reflect.Snapshots.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

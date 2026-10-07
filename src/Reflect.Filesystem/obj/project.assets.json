@@ -32,11 +32,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Personal\\proyectos\\programar\\API\\Reflect\\src\\Reflect.Filesystem\\Reflect.Filesystem.csproj",
+      "projectUniqueName": "B:\\proyectos\\programar\\C#\\Reflect\\src\\Reflect.Filesystem\\Reflect.Filesystem.csproj",
       "projectName": "Reflect.Filesystem",
-      "projectPath": "D:\\Personal\\proyectos\\programar\\API\\Reflect\\src\\Reflect.Filesystem\\Reflect.Filesystem.csproj",
+      "projectPath": "B:\\proyectos\\programar\\C#\\Reflect\\src\\Reflect.Filesystem\\Reflect.Filesystem.csproj",
       "packagesPath": "C:\\Users\\jordimra\\.nuget\\packages\\",
-      "outputPath": "D:\\Personal\\proyectos\\programar\\API\\Reflect\\src\\Reflect.Filesystem\\obj\\",
+      "outputPath": "B:\\proyectos\\programar\\C#\\Reflect\\src\\Reflect.Filesystem\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\jordimra\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -54,8 +54,8 @@
           "framework": "net10.0",
           "targetAlias": "net10.0",
           "projectReferences": {
-            "D:\\Personal\\proyectos\\programar\\API\\Reflect\\src\\Reflect.Core\\Reflect.Core.csproj": {
-              "projectPath": "D:\\Personal\\proyectos\\programar\\API\\Reflect\\src\\Reflect.Core\\Reflect.Core.csproj"
+            "B:\\proyectos\\programar\\C#\\Reflect\\src\\Reflect.Core\\Reflect.Core.csproj": {
+              "projectPath": "B:\\proyectos\\programar\\C#\\Reflect\\src\\Reflect.Core\\Reflect.Core.csproj"
             }
           }
         }

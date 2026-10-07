@@ -1,0 +1,16 @@
+B:\proyectos\programar\C#\Reflect\src\Reflect.Reporting\bin\Debug\net10.0\Reflect.Reporting.deps.json
+B:\proyectos\programar\C#\Reflect\src\Reflect.Reporting\bin\Debug\net10.0\Reflect.Reporting.dll
+B:\proyectos\programar\C#\Reflect\src\Reflect.Reporting\bin\Debug\net10.0\Reflect.Reporting.pdb
+B:\proyectos\programar\C#\Reflect\src\Reflect.Reporting\bin\Debug\net10.0\Reflect.Core.dll
+B:\proyectos\programar\C#\Reflect\src\Reflect.Reporting\bin\Debug\net10.0\Reflect.Core.pdb
+B:\proyectos\programar\C#\Reflect\src\Reflect.Reporting\obj\Debug\net10.0\Reflect.Reporting.csproj.AssemblyReference.cache
+B:\proyectos\programar\C#\Reflect\src\Reflect.Reporting\obj\Debug\net10.0\Reflect.Reporting.GeneratedMSBuildEditorConfig.editorconfig
+B:\proyectos\programar\C#\Reflect\src\Reflect.Reporting\obj\Debug\net10.0\Reflect.Reporting.AssemblyInfoInputs.cache
+B:\proyectos\programar\C#\Reflect\src\Reflect.Reporting\obj\Debug\net10.0\Reflect.Reporting.AssemblyInfo.cs
+B:\proyectos\programar\C#\Reflect\src\Reflect.Reporting\obj\Debug\net10.0\Reflect.Reporting.csproj.CoreCompileInputs.cache
+B:\proyectos\programar\C#\Reflect\src\Reflect.Reporting\obj\Debug\net10.0\Reflect.Reporting.sourcelink.json
+B:\proyectos\programar\C#\Reflect\src\Reflect.Reporting\obj\Debug\net10.0\Reflect..FA92835A.Up2Date
+B:\proyectos\programar\C#\Reflect\src\Reflect.Reporting\obj\Debug\net10.0\Reflect.Reporting.dll
+B:\proyectos\programar\C#\Reflect\src\Reflect.Reporting\obj\Debug\net10.0\refint\Reflect.Reporting.dll
+B:\proyectos\programar\C#\Reflect\src\Reflect.Reporting\obj\Debug\net10.0\Reflect.Reporting.pdb
+B:\proyectos\programar\C#\Reflect\src\Reflect.Reporting\obj\Debug\net10.0\ref\Reflect.Reporting.dll
